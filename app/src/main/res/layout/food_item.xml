@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback">
+
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+        <TextView
+             android:id="@+id/txtName"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:textStyle="bold"
+             android:layout_marginEnd="33dp"
+             android:layout_marginRight="33dp"
+             android:text="Recipe name"
+             android:textAlignment="center"
+             android:textColor="#ffff"
+             android:textSize="25sp" />
+
+
+        <TextView
+            android:text="timeCooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTimeCooking"
+            android:textSize="20sp"
+            android:textColor="#0348F5"
+            android:textAlignment="center"
+            android:layout_below="@+id/txtName"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:text="description"
+            android:textStyle="normal"
+
+            android:textColor="#ffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    android:orientation="vertical"
+    tools:context=".Recipes">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+        <Button
+            android:id="@+id/btnBackHom"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonloginback"
+            android:text="Вернуться в главное меню"
+            android:onClick="returnFromRecipes" />
+        <EditText
+            android:textColorHint="#ffff"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:id="@+id/edtName"
+            android:layout_below="@+id/btnBackHom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginTop="55dp"
+            android:layout_alignParentTop="true"
+            android:hint="Название"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:textColorHint="#ffff"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:id="@+id/edtTimeCooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="Время приготовления"
+            android:layout_below="@+id/edtName"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+        <Button
+            android:background="@drawable/buttonadding"
+            android:id="@+id/btnAdd"
+            android:text="Добавить"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp" />
+
+        <Button
+            android:textColor="#ffff"
+            android:background="@drawable/buttonadding"
+            android:id="@+id/btnList"
+            android:onClick="toList"
+            android:text=" Список Рецептов"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btnAdd" />
+        <EditText
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="Описание "
+            android:textColorHint="#ffff"
+            android:maxLines="40"
+            android:layout_below="@+id/edtTimeCooking"/>
+    </RelativeLayout>
+</ScrollView>

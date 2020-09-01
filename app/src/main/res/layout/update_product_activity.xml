@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    android:background="@drawable/loginback"
+tools:context=".Products">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:id="@+id/starting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Редактирование продукта"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:id="@+id/product_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/starting_text"
+        android:layout_marginTop="35dp"
+        android:layout_alignLeft="@+id/carbohydrates_text"
+        android:layout_alignRight="@+id/carbohydrates_text"
+        android:text="Название:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:id="@+id/edtProduct"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_text"
+        android:layout_marginLeft="5dp"
+
+        android:layout_toRightOf="@+id/product_text"
+        android:layout_marginBottom="-10dp"
+        android:hint="название "
+        android:textColorHint="#ffff"
+        android:inputType="text">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:id="@+id/energy_text"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtProduct"
+        android:layout_alignLeft="@+id/carbohydrates_text"
+        android:layout_alignRight="@+id/carbohydrates_text"
+        android:layout_marginTop="35dp"
+        android:text="Ккалорийность:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:textColorHint="#ffff"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:id="@+id/edtEnergy"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/energy_text"
+        android:layout_marginBottom="-10dp"
+        android:layout_alignLeft="@+id/edtProduct"
+        android:layout_alignRight="@+id/editCarbohydrates"
+        android:hint="ккалорийность"
+
+        android:inputType="number"
+        />
+    <TextView
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:id="@+id/proteins_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/energy_text"
+        android:layout_alignLeft="@+id/carbohydrates_text"
+        android:layout_alignRight="@+id/carbohydrates_text"
+        android:layout_marginTop="40dp"
+        android:text="Кол-во белков:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:textColorHint="#ffff"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:id="@+id/edtProteins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/proteins_text"
+        android:layout_alignLeft="@+id/edtProduct"
+        android:layout_alignRight="@+id/editCarbohydrates"
+        android:hint="кол-во белков"
+        android:inputType="number"
+        android:layout_marginBottom="-10dp"/>
+    <TextView
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:id="@+id/fats_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtProteins"
+
+
+        android:layout_marginTop="40dp"
+        android:text="Кол-во жиров:"
+        android:layout_alignLeft="@+id/carbohydrates_text"
+        android:layout_alignRight="@+id/carbohydrates_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:textColorHint="#ffff"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:id="@+id/edtFats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fats_text"
+        android:layout_alignLeft="@+id/edtProduct"
+        android:layout_alignRight="@+id/editCarbohydrates"
+        android:hint="кол-во жиров"
+        android:layout_marginBottom="-10dp"
+
+
+        android:inputType="number" />
+    <TextView
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:id="@+id/carbohydrates_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fats_text"
+
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="40dp"
+        android:text="Кол-во углеводов:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edtCarbohydrates"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtProduct"
+        android:layout_alignBottom="@+id/carbohydrates_text"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="-10dp"
+        android:hint="кол-во углеводов"
+
+        android:inputType="number"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtCarbohydrates"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/buttonadding"
+        android:textColor="#FFFFFF"
+        android:text="Добавить" />
+
+</RelativeLayout>
+
+</ScrollView>

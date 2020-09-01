@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingBottom="0dp"
+        android:weightSum="3">
+
+        <Button
+            android:background="@drawable/buttonadding"
+            android:id="@+id/btnBmi"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:onClick="showProducts"
+            android:textStyle="bold"
+            android:text="Продукты"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:background="@drawable/buttonadding"
+            android:src="@drawable/ic_home_white_24dp" />
+
+        <Button
+            android:background="@drawable/buttonadding"
+            android:id="@+id/btnKalori"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:onClick="showRecipes"
+            android:textStyle="bold"
+            android:text="Рецепты"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <TextView
+    android:id="@+id/txthi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+    android:layout_marginLeft="10dp" android:layout_centerHorizontal="true"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:layout_below="@+id/txthi"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_below="@+id/textInformation"
+        android:layout_marginTop="100dp"
+        android:id="@+id/CaloriBmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCountBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+
+            android:onClick="countBMI"
+            android:background="@drawable/buttonadding"
+            android:text="Рассчитать ИМТ"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:background="@drawable/buttonadding"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+
+            android:id="@+id/countPulse"
+            android:onClick="countPulse"
+            android:text="Рассчитать пульс"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEditInformation"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInformation"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonadding"
+        android:onClick="editInformation"
+        android:text="Редактировать данные"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnCountCalori"
+        android:onClick="countCalori"
+        android:text="Рассчитать калории"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInformation"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/buttonadding"
+        android:layout_marginBottom="350dp"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="#FFFFFF" />
+
+
+
+
+</RelativeLayout>
